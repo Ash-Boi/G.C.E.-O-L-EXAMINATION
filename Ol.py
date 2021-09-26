@@ -2,7 +2,7 @@ import requests
 import json
 
 
-token='2003945868:AAH1fGp_wP8LrwB-9ivuh1LrMECyFtSF1hk'
+token='බොට් api එම්ක'
 method='sendMessage'
 
 def get_data(index_no):
@@ -71,11 +71,11 @@ def get_data(index_no):
             print(Sub9name)
             print(Sub9result)
 
-            msg=ex+' 👉 '+exam+'\n'+namee+' 👉 '+na+'\n'+year+' 👉 '+ye+'\n'+idd+' 👉 '+index+'\n'+ni+' 👉 '+nic+'\n'+Sub1name+' 👉 '+Sub1result+'\n'+Sub2name+' 👉 '+Sub2result+'\n'+Sub3name+' 👉 '+Sub3result+'\n'+Sub3name+' 👉 '+Sub3result+'\n'+Sub4name+' 👉 '+Sub4result+'\n'+Sub5name+' 👉 '+Sub5result+'\n'+Sub6name+' 👉 '+Sub6result+'\n'+Sub7name+' 👉 '+Sub7result+'\n'+Sub8name+' 👉 '+Sub8result
+            msg=ex+' 👉 '+exam+'\n'+namee+' 👉 '+na+'\n'+year+' 👉 '+ye+'\n'+idd+' 👉 '+index+'\n'+ni+' 👉 '+nic+'\n'+Sub1name+' 👉 '+Sub1result+'\n'+Sub2name+' 👉 '+Sub2result+'\n'+Sub3name+' 👉 '+Sub3result+'\n'+Sub4name+' 👉 '+Sub4result+'\n'+Sub5name+' 👉 '+Sub5result+'\n'+Sub6name+' 👉 '+Sub6result+'\n'+Sub7name+' 👉 '+Sub7result+'\n'+Sub8name+' 👉 '+Sub8result+'\n'+Sub9name+' 👉 '+Sub9result
 
             response = requests.post(
             url='https://api.telegram.org/bot{0}/{1}'.format(token, method),
-            data={'chat_id':-1001382063849, 'text': msg}
+            data={'chat_id':-චැනල් id එම්ක, 'text': msg}
             ).json() 
     except:
         print('err')
@@ -84,5 +84,5 @@ for i in range(10000000,99999999):
 
 response = requests.post(
     url='https://api.telegram.org/bot{0}/{1}'.format(token, method),
-    data={'chat_id':-1001382063849, 'text': 'Done start again'}
+    data={'chat_id':-චැනල් id එම්ක, 'text': 'Done start again'}
     ).json()
